@@ -5,25 +5,8 @@
 
 {{! The big featured header on the homepage, with the site logo and description }}
 <!-- Site header area, dark backbround, or grab image -->
-<header class="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-	<div class="container">
-		<!-- Vertically center -->
-		<div class="vertical">
-			<div class="site-head-content inner">
-				{{#if @blog.logo}}
-					<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
-				{{else}}
-					<h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-				{{/if}}
-				<h2 class="blog-description">
-					{{#post}}
-						{{{title}}}
-					{{/post}}
-				</h2>
-			</div>
-		</div><!-- END .vertical -->
-	</div><!-- END .container -->
-</header><!-- END .site-head -->
+
+{{> header}}
 <div class="container">
 	<main class="content" role="main">
 		<article class="{{post_class}}">
@@ -51,4 +34,5 @@
 			{{/post}}
 		</article>
 	</main><!-- END role="main" -->
+	{{> disqus}}
 </div><!-- END .container -->
