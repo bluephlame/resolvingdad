@@ -15,6 +15,8 @@
 
 	<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
+
+
 	{{! Styles'n'Scripts }}
 	<link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
@@ -52,6 +54,30 @@
 	  ga('create', 'UA-52483456-1', 'auto');
 	  ga('send', 'pageview');
 
+	</script>
+	<script>
+	var refTagger = {
+		settings: {
+			bibleReader: "bible.faithlife",
+			bibleVersion: "ESV",
+			dropShadow: false,			
+			roundCorners: true,
+			socialSharing: [],
+			customStyle : {
+				heading: {
+					fontFamily : "Tahoma, Verdana, Segoe, sans-serif"
+				},
+				body   : {
+					fontFamily : "Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif"
+				}
+			}
+		}
+	};
+	(function(d, t) {
+		var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+		g.src = "//api.reftagger.com/v2/RefTagger.js";
+		s.parentNode.insertBefore(g, s);
+	}(document, "script"));
 	</script>
 </body>
 </html>
