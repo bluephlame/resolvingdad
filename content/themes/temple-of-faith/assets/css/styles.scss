@@ -19,7 +19,7 @@ body{
 	height: 100%;
 	font-family: $sans;
 
-	a{s
+	a{
 		color: #2b303b;
 		&:hover{
 			text-decoration: underline;
@@ -89,7 +89,10 @@ h1, h2, h3, h4, h5, h6{
 
 .site-head{
 	background-color: #2b303b;
-	padding: 100px 0px 100px 0px; 
+	padding: 100px 0px 0px 0px; 
+	.container{
+		padding-bottom:100px;
+	}
 }
 
 .blog-title{
