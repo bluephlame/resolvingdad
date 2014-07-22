@@ -1,6 +1,0 @@
-[31m
-ERROR:[39m [31mEmail Error: Invalid login - 534-5.7.9 Application-specific password required. Learn more at
-534 5.7.9 http://support.google.com/accounts/bin/answer.py?answer=185833 gg3sm12907730pbc.34 - gsmtp[39m
-[37mUnable to send welcome email, your blog will continue to function.[39m
-[32mPlease see http://docs.ghost.org/mail/ for instructions on configuring email.[39m
-
